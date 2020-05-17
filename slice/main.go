@@ -14,7 +14,7 @@ type queue struct {
 }
 
 func newQueue() worker.Queue {
-	sl := make([]worker.JobFunc, 0)
+	sl := make([]worker.JobFunc, 0, 0)
 
 	return &queue{
 		sl: sl,
